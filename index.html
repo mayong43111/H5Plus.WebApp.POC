@@ -200,7 +200,8 @@
 			var urls = {
 				'口语特训': 'https://dev-mtutor.chinacloudsites.cn/dist/app-read-after-me/',
 				'看脸起名': 'https://dev-mtutor.chinacloudsites.cn/dist/app-name-giving/',
-				'单词修炼': 'https://dev-mtutor.chinacloudsites.cn/dist/app-vocabulary/'
+				'单词修炼': 'https://dev-mtutor.chinacloudsites.cn/dist/app-vocabulary/',
+				'情景模拟': 'https://dev-mtutor.chinacloudsites.cn/dist/app-scenario-lesson/'
 			};
 
 			var startUrl = urls[key];
@@ -283,6 +284,11 @@
 
 <body onselectstart="return false;">
 	<ul id="plist" style="list-style:none;margin:0;padding:0;text-align:left;">
+		<li onclick="startEngkooActivity('情景模拟','情景模拟')">
+			<span class="item">情景模拟
+				<div class="chs">小英助手</div>
+			</span>
+		</li>
 		<li onclick="startEngkooActivity('口语特训','口语特训')">
 			<span class="item">口语特训
 				<div class="chs">小英助手</div>
