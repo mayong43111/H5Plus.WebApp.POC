@@ -26,8 +26,8 @@ document.addEventListener('plusready',function () {   //固定模板,不用修
                 console.log('Javascript callback error: ' + errorMsg)
             },
             //自定义js方法,但是必须要和扩展类的的方法名称一致,否则无法调用原生api
-            startEngkooWebView:function (url, access_token, title) {
-                this.callNative('startEngkooWebView', [url, access_token, title], null)  //第一个参数方法名称字符串,必须和方法名一致,参数二是要传递的参数
+            startEngkooWebView:function (url, access_token, title, nameMapping) {
+                this.callNative('startEngkooWebView', [url, access_token, title, nameMapping], null)  //第一个参数方法名称字符串,必须和方法名一致,参数二是要传递的参数
             }
         };
         window.plus.EngkooWebView = EngkooWebViewPlugin //固定模板,示例:window.plus.插件名 = 同注释③变量名一致
