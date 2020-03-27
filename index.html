@@ -205,6 +205,8 @@
 			};
 
 			var startUrl = urls[key];
+			
+			var nameMapping = JSON.parse({ 'Log_In': 'LOG_IN'});
 
 			//判读是否为安卓
 			if (navigator.userAgent.match(/(Android);?[\s\/]+([\d.]+)?/)) {
@@ -214,7 +216,7 @@
 			}
 
 			loadEngkooAccessToken(configuration, function (token) {
-				plus.EngkooWebView.startEngkooWebView(startUrl, token, title);
+				plus.EngkooWebView.startEngkooWebView(startUrl, token, title, nameMapping);
 			})
 		}
 
